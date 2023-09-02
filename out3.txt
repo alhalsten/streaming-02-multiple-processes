@@ -5,3 +5,30 @@ This will clear the console output.
 Run the file once while the tasks are longer. 
 
 Copy and paste the terminal results (when task_duration is 3) here.
+PS C:\Users\alhal\OneDrive\Documents\44-671\streaming-02-multiple-processes> & C:/Users/alhal/AppData/Local/Microsoft/WindowsApps/python3.10.exe c:/Users/alhal/OneDrive/Documents/44-671/streaming-02-multiple-processes/multiple_processes.py
+2023-09-01 20:14:51,717 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2023-09-01 at 08:14 PM
+  Operating System: nt Windows 10
+  Python Version:   3.10.11
+  Path to Interpreter:  C:\Users\alhal\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\python.exe
+======================================================================
+
+2023-09-01 20:14:51,719 - INFO - Called recreate_database().
+2023-09-01 20:14:51,719 - INFO - Called drop_table().
+2023-09-01 20:14:51,733 - INFO - Table 'pets' dropped successfully.
+2023-09-01 20:14:51,733 - INFO - Called create_table().
+2023-09-01 20:14:51,741 - INFO - Table 'pets' created successfully.
+2023-09-01 20:14:51,887 - INFO - Called process_one().
+2023-09-01 20:14:51,888 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.     
+2023-09-01 20:14:51,910 - INFO - Called process_two().
+2023-09-01 20:14:51,910 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2023-09-01 20:14:51,925 - INFO - Called process_three().
+2023-09-01 20:14:51,925 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit. 
+2023-09-01 20:14:54,925 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2023-09-01 20:14:57,499 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2023-09-01 20:14:57,500 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.   
+2023-09-01 20:14:57,531 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2023-09-01 20:14:57,532 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.   
+PS C:\Users\alhal\OneDrive\Documents\44-671\streaming-02-multiple-processes> 
